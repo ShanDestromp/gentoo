@@ -79,7 +79,7 @@ pkg_postinst() {
            rm -Rf "/usr/share/${PN}/.git"
         fi
 
-        elog "SickRage has been installed with data directories in /opt/${PN}"
+        elog "SickRage has been installed with data directories in /usr/share/${PN}"
         elog
         elog "New user/group ${PN}/${PN} has been created"
         elog
