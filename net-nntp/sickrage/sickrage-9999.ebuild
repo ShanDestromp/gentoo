@@ -4,7 +4,7 @@
 
 EAPI=5
 
-PYTHON_COMPAT=( python2_6 python2_7 )
+PYTHON_COMPAT=( python2_7 )
 
 EGIT_REPO_URI="https://github.com/SiCKRAGETV/SickRage.git"
 EGIT_BRANCH="develop"
@@ -63,7 +63,7 @@ src_install() {
         echo ${last_commit} > version.txt
 
         insinto /usr/share/${PN}
-        doins -r autoProcessTV gui lib runscripts sickbeard tests tornado SickBeard.py version.txt
+        doins -r autoProcessTV gui lib runscripts sickbeard sickrage tests tornado SickBeard.py version.txt
 #       doins -r googlecode_upload.py setup.py
         fowners -R ${PN}:${PN} /usr/share/${PN}
 }
@@ -79,7 +79,7 @@ pkg_postinst() {
            rm -Rf "/usr/share/${PN}/.git"
         fi
 
-        elog "SickRage has been installed with data directories in /var/${PN}"
+        elog "SickRage has been installed with data directories in /opt/${PN}"
         elog
         elog "New user/group ${PN}/${PN} has been created"
         elog

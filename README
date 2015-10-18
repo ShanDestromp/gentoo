@@ -1,1 +1,5 @@
-A collection of Gentoo ebuilds typically for HTPC systems
+A collection of Gentoo ebuilds typically for HTPC systems.
+
+No promise of fit or useability as they are often cobbled together from 
+existing ebuilds which no longer worked.  Most rely on git for sources
+and can stop working at any time due to upstream changes.

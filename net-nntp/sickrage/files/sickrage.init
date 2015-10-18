@@ -12,7 +12,7 @@ pidfile="$run_dir/sickrage.pid"
 etc_dir="/etc/sickrage"
 var_dir="/var/sickrage"
 log_dir="/var/log/sickrage"
-program="$CODE_DIR/Sickbeard.py"
+program="$CODE_DIR/SickBeard.py"
 bin=`which $PYTHON_BIN`
 
 check_config() {
@@ -35,7 +35,7 @@ start() {
         ebegin "Starting SickRage"
         start-stop-daemon --start --pidfile ${pidfile} -u ${USER} -g ${GROUP}\
 	--exec ${bin} ${program} -- \
-	--daemon --pid_file ${pidfile} --data_dir ${var_dir} --config_file ${CONFIG_FILE}
+	-d --pidfile=${pidfile} --datadir=${var_dir} --config=${CONFIG_FILE}
         eend $?
 }
 
