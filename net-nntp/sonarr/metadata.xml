@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+    <maintainer>
+        <email>dustradio03@gmail.com</email>
+        <name>Dave</name>
+    </maintainer>
+    <longdescription>Sonarr PVR for newsgroups and torrents.</longdescription>
+</pkgmetadata>
